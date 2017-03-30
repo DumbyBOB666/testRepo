@@ -10,3 +10,6 @@ for i in range(11): print(add(i, i))
 for j in range(11): print(sub(i, i))
 
 for x in range(11): print(mul(i, i))
+
+for y in range(11): print(div(i, i))
+
