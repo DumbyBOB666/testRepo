@@ -9,20 +9,13 @@ def All(x):
 	try: return x + x - x * x / x % x // x * x + x
 	except: return 'error'
 
-	print(addR)
-	print(subR)
-	print(mulR)
-	print(divR)
-	print("results")
-
+<<<<<<< HEAD
 def loopFunc(x, func):
 	for i in range(x):
 		print(func(i, i))
 
 loopFunc(11, Div)
-
-testLoop()
-
+=======
 class Loop:
 	
 	def __init__(self):
@@ -42,3 +35,4 @@ testLoop()
 =======
 >>>>>>> advanceDecClass
  
+>>>>>>> advanceLooping
