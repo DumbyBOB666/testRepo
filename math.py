@@ -1,19 +1,25 @@
-def add(x, y): return x + y
-def sub(x, y): return x - y
-def mul(x, y): return x * y
-def div(x, y): return x / y
-def mod(x, y): return x % y
-
+def Add(x, y): return x + y
+def Sub(x, y): return x - y
+def Mul(x, y): return x * y
+def Div(x, y): 
+	try: return x / y
+	except: return 'error'
+def Mod(x, y): return x % y
+def All(x): 
+	try: return x + x - x * x / x % x // x * x + x
+	except: return 'error'
 def testLoop():
-	for i in range(11): print(add(i, i))
+	addR = [Add(i, i) for i in range(11)]
+	subR = [Sub(i, i) for i in range(11)]
+	mulR = [Mul(i, i) for i in range(11)]
+	divR = [Div(i, i) for i in range(11)]
+	AllR = [All(i) for i in range(11)]
 
-	for j in range(11): print(sub(i, i))
+	print(addR)
+	print(subR)
+	print(mulR)
+	print(divR)
+	print("results")
 
-	for x in range(11): print(mul(i, i))
-
-	for y in range(11): print(div(i, i))
-
-	for l in range(11): print(mul(i, i))
-
-	for p in range(11): print(mod(i, i))
-
+testLoop()
+ 
