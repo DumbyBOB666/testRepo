@@ -5,15 +5,13 @@ def div(x, y): return x / y
 def mod(x, y): return x % y
 
 def testLoop():
-	for i in range(11): print(add(i, i))
+	add = [add(i, i) for i in range(11)]
+	sub = [sub(i, i) for i in range(11)]
+	mul = [mul(i, i) for i in range(11)]
+	div = [div(i, i) for i in range(11)]
 
-	for j in range(11): print(sub(i, i))
-
-	for x in range(11): print(mul(i, i))
-
-	for y in range(11): print(div(i, i))
-
-	for l in range(11): print(mul(i, i))
-
-	for p in range(11): print(mod(i, i))
-
+	print(add)
+	print(sub)
+	print(mul)
+	print(div)
+	print("results")
